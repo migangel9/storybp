@@ -126,7 +126,7 @@
 	layout: "vertical"
 }
 
-".destacado3":{	
+".destacado3":{	   
 	width: "340",
 	height: "105",
 	top: "5",

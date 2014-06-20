@@ -1,6 +1,6 @@
-<Alloy>
+<Alloy> 
 	<Window class="container">
-		<!-- Menu-->
+		<!-- Menu   comentario-->
 		<!-- <Require src="menu" /> -->
 		<View id="menu" onSwipe="hideMenu">
 			<View id="options">
