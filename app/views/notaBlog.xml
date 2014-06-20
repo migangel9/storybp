@@ -1,0 +1,29 @@
+<Alloy>
+	<Window id="container">
+		<!-- Menu-->
+		<View id="menu" onClick="hideMenu"></View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">				
+				<ImageView class="topActionButton" id="backBtn" onClick="closeNota"></ImageView>
+				<Label id="backLbl" onClick="closeNota">Vida Blog</Label>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+					
+			<!-- Seccion de Noticias -->
+			<View id="rowContainer" onSwipe="closeNota">																	
+					<Label id="notaTitle"> Titulo Nota </Label>																						
+					<Label id="notaText"> Nota COMPLETA 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget leo et augue vestibulum hendrerit vel a purus. Maecenas malesuada erat hendrerit arcu viverra, non interdum lorem lacinia. Aliquam condimentum leo augue, a auctor sapien ultrices eget. Suspendisse condimentum lacinia semper. Donec iaculis consequat congue. Maecenas placerat nunc varius nibh ultricies imperdiet. Sed facilisis faucibus augue, quis aliquam nibh. Suspendisse nibh sem, ornare ut sem vitae, pharetra posuere metus. Mauris viverra, purus eget iaculis egestas, lacus mi placerat turpis, vel feugiat tellus mauris sit amet turpis. Donec condimentum molestie felis nec congue. Aliquam vel lacus a turpis mattis porta. Nunc auctor feugiat ipsum.									
+					</Label>		
+					<ImageView id="notaPic"></ImageView>
+						<View id="bottomActions">
+						</View>										
+			</View>			
+		</View>
+	</Window>
+</Alloy>
+
+
+

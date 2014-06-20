@@ -1,0 +1,155 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">			
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+						
+			<!-- Menu Secundario-->
+			<View id="menuBar">		
+				<View class="buttons" onClick="showComida">			
+					<ImageView id="comidaBtn"></ImageView>
+					<View id="tabActive"></View>
+				</View>
+				<View class="buttons" onClick="showGrafica">
+					<ImageView id="graficasBtn"></ImageView>
+				</View>
+				<View class="buttons" onClick="showMonigote">
+					<ImageView id="monigoteBtn"></ImageView>				
+				</View>
+			</View>
+
+			<!-- Seccion de Principal -->
+			<!-- --> 
+			<ScrollView id="saludometro" showVerticalScrollIndicator="true" scrollType="vertical"> 
+			
+				<ScrollableView id="scrollView" showPagingControl="true">
+            		<View id="v1" class="scroll">
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/meatBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/eggBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/bananaBtn.png"></ImageView>
+            			</View>
+            		</View>             		
+            		<View id="v2" class="scroll">
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/appleBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/friesBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/burguerBtn.png"></ImageView>
+            			</View>
+            		</View>
+            		<View id="v3" class="scroll">
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/pizzaBtn.png"></ImageView>
+            			</View>            		
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/tomatoBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/chickenBtn.png"></ImageView>
+            			</View>
+            		</View>            		
+        		</ScrollableView>
+        		
+        		<ScrollableView id="scrollView" showPagingControl="true">
+            		<View id="v1" class="scroll">            			
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/appleBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/friesBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/burguerBtn.png"></ImageView>
+            			</View>
+            		</View>             		
+            		<View id="v2" class="scroll">
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/meatBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/eggBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/bananaBtn.png"></ImageView>
+            			</View>
+            		</View>
+            		<View id="v3" class="scroll">
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/pizzaBtn.png"></ImageView>
+            			</View>            		
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/tomatoBtn.png"></ImageView>
+            			</View>
+            			<View class="image">
+            				<ImageView class="imgBtn" image="/images/chickenBtn.png"></ImageView>
+            			</View>
+            		</View>            		
+        		</ScrollableView>
+        		        	
+        	
+        		<View id="platillo">
+        				<ImageView image="/images/plato.png"></ImageView> 
+        				<ImageView height="35" width="35" right="15" image="/images/scanBtn.png"></ImageView>       			
+        		</View>		
+        		
+        		
+        		<View id="recomendaciones">		
+					<Label color="#fff" left="5" right="5">Te recomendamos que agregues jitomate a tu comida, esta te ayudara a subir el nivel de ...</Label>				
+				</View>        		
+        		<!-- <View id="saludometro"> -->
+        			<Label id="saludLbl">Saludometro</Label>
+        			<Label id="saludPuntajeLbl">+ 14 pts</Label>
+        			 <View class="barra"> 
+        			  <ProgressBar id="pb" min="0" width="80%" max="100" value="30" color="#000" message="Granos" />
+        			 </View>
+        			 <View class="barra">
+        			  <ProgressBar id="pb2" min="0" width="80%" max="100" value="50" color="#000" message="Verduras" />
+        			 </View>
+        			 <View class="barra">
+        			  <ProgressBar id="pb3" min="0" width="80%" max="100" value="85" message="Frutas" />
+        			 </View>
+        			 <View class="barra">
+        			  <ProgressBar id="pb3" min="0" width="80%" max="100" value="65" message="Lacteos" />
+        			 </View>
+        			 <View class="barra">
+        			  <ProgressBar id="pb3" min="0" width="80%" max="100" value="45" message="Grasas" />
+        			 </View>
+        			 <View class="barra">
+        			  <ProgressBar id="pb3" min="0" width="80%" max="100" value="15" message="Carne" />
+        			 </View>
+        	
+        		  <Button id="button" title="Enviar"top="10" width="100" height="50" bottom="15"/>
+        		<!-- </View> --> 
+			 </ScrollView>
+		</View>
+	</Window>
+</Alloy>

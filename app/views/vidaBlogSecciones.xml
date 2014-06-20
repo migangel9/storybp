@@ -1,0 +1,57 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">
+					<Label id="seccionLbl">VIDA BLOG</Label>
+			</View>
+			
+			<!-- Seccion de Principal -->
+			<ScrollView id="buttons" showVerticalScrollIndicator="true" scrollType="vertical">			
+					<View class="tbButton">				
+						<ImageView id="allBtn" onClick="showCategoria"></ImageView>
+						<Label>Todas</Label>
+					</View>
+					<View class="tbButton">				
+						<ImageView id="nutricionBtn" onClick="showCategoria"></ImageView>
+						<Label>Nutrición</Label>
+					</View>			
+					<View class="tbButton">
+						<ImageView id="deporteBtn" onClick="showCategoria"></ImageView>
+						<Label>Deporte</Label>
+					</View>							
+					<View class="tbButton">
+						<ImageView id="bienBtn" onClick="showCategoria"></ImageView>
+						<Label>Bienestar Fisico</Label>
+					</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>
+
+
+

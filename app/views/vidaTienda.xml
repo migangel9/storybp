@@ -1,0 +1,126 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">					
+					<Label id="cashN" text=" $ 0000002930"/>
+					<ImageView id="cashBtn"></ImageView>					
+			</View>
+			
+			<!-- Seccion de Principal -->
+			<ScrollView id="buttons" showVerticalScrollIndicator="true" scrollType="vertical">						
+					<View class="tbButton">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/bananaBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>				
+
+					<View class="tbButton" onClick="showVidaProducto">
+						<Label id="nameProduct" text="Manzana Roja"/>
+						<ImageView image="/images/appleBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Naranja"/>
+						<ImageView image="/images/orangeBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Pera"/>
+						<ImageView image="/images/pearBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 300"/>	
+					</View>				
+					
+					<View class="tbButton">
+						<Label id="nameProduct" text="Te Verde"/>
+						<ImageView image="/images/coffeBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 400"/>	
+					</View>						
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/bananaBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Manzana Roja"/>
+						<ImageView image="/images/appleBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Naranja"/>
+						<ImageView image="/images/orangeBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Pera"/>
+						<ImageView image="/images/pearBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 300"/>	
+					</View>				
+					
+					<View class="tbButton">
+						<Label id="nameProduct" text="Te Verde"/>
+						<ImageView image="/images/coffeBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 400"/>	
+					</View>
+					
+					<View class="tbButton">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/bananaBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Manzana Roja"/>
+						<ImageView image="/images/appleBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Naranja"/>
+						<ImageView image="/images/orangeBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="tbButton">
+						<Label id="nameProduct" text="Pera"/>
+						<ImageView image="/images/pearBtn.png"></ImageView>
+						<Label id="priceProduct" text="$ 300"/>	
+					</View>				
+
+				</ScrollView>							
+		</View>
+	</Window>
+</Alloy>
+
+
+

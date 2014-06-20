@@ -1,0 +1,48 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+						
+			<!-- Menu Secundario-->
+			<View id="menuBar">		
+				<View class="buttons" onClick="showComida">			
+					<ImageView id="comidaBtn"></ImageView>
+				</View>
+				<View class="buttons" onClick="showGrafica">
+					<ImageView id="graficasBtn"></ImageView>
+				</View>
+				<View class="buttons" onClick="showMonigote">
+					<ImageView id="monigoteBtn"></ImageView>
+					<View id="tabActive"></View>
+				</View>
+			</View>
+						
+			<!-- Seccion de Principal -->
+			<View id="principal">
+					<ImageView id="monigote"></ImageView>
+			</View>
+		</View>
+	</Window>
+</Alloy>

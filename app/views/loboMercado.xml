@@ -1,0 +1,126 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">
+				<View class="tbButton">
+					<Label id="tituloLbl">Lobo Mercado</Label>
+					<Picker id="pickerNoticias" selectionIndicator="true">
+          			  	<PickerColumn id="columnPickerNoticias">
+          			  		<PickerRow class="rowPickerNoticias" title="Todos los Productos"/>
+                			<PickerRow class="rowPickerNoticias" title="Electronicos" />
+                			<PickerRow class="rowPickerNoticias" title="Deportivos" />
+                			<PickerRow class="rowPickerNoticias" title="Clases" />                		
+            			</PickerColumn>
+        			</Picker>
+        			<ImageView id="filterBtn"></ImageView>
+				</View>					
+			</View>
+			<!-- Seccion de Principal -->
+			<ScrollView id="buttons" showVerticalScrollIndicator="true" scrollType="vertical">						
+					<View class="destacado2">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/libro.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>				
+
+					<View class="destacado2" onClick="showVidaProducto">
+						<Label id="nameProduct" text="Manzana Roja"/>
+						<ImageView image="/images/playera.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="destacado2">
+						<Label id="nameProduct" text="Naranja"/>
+						<ImageView image="/images/motorola.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>						
+
+					
+					<View class="destacado4">
+						<Label id="nameProduct" text="Te Verde"/>
+						<ImageView image="/images/iphone.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 400"/>
+					</View>						
+
+					<View class="destacado4">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/audifonos.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>
+					
+					<View class="destacado3">
+						<Label id="nameProduct" text="Pera"/>
+						<ImageView image="/images/restirador.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 300"/>	
+					</View>
+					
+					<View class="destacado2">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/libro.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>				
+
+					<View class="destacado2" onClick="showVidaProducto">
+						<Label id="nameProduct" text="Manzana Roja"/>
+						<ImageView image="/images/playera.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>				
+
+					<View class="destacado2">
+						<Label id="nameProduct" text="Naranja"/>
+						<ImageView image="/images/motorola.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 200"/>	
+					</View>						
+
+					
+					<View class="destacado4">
+						<Label id="nameProduct" text="Te Verde"/>
+						<ImageView image="/images/iphone.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 400"/>
+					</View>						
+
+					<View class="destacado4">
+						<Label id="nameProduct" text="Platano"/>
+						<ImageView image="/images/audifonos.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 100"/>	
+					</View>
+					
+					<View class="destacado3">
+						<Label id="nameProduct" text="Pera"/>
+						<ImageView image="/images/restirador.jpg"></ImageView>
+						<Label id="priceProduct" text="$ 300"/>	
+					</View>				
+									
+
+				</ScrollView>							
+		</View>
+	</Window>
+</Alloy>
+
+
+

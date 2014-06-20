@@ -1,0 +1,91 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>		
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>			
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">
+				<View class="tbButton">
+					<Label id="categoriaLbl">VIDA BLOG</Label>					
+				</View>							
+			</View>
+			
+			<!-- Seccion de Notas Blog Vida -->
+			<TableView id="mainList">  
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNota">															
+							<Label id="notaTitle">Titulo de la nota</Label>							
+							<ImageView id="notaPic"></ImageView>													
+							<Label id="notaText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget leo et augue vestibulum hendrerit vel a purus. Maecenas malesuada erat hendrerit arcu viverra, non interdum lorem lacinia. 
+							</Label>	
+						<View id="bottomActions">
+						</View>
+					</View>
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNota">															
+							<Label id="notaTitle">Titulo de la nota</Label>							
+							<ImageView id="notaPic"></ImageView>													
+							<Label id="notaText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget leo et augue vestibulum hendrerit vel a purus. Maecenas malesuada erat hendrerit arcu viverra, non interdum lorem lacinia. 
+							</Label>	
+						<View id="bottomActions">
+						</View>
+					</View>
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNota">															
+							<Label id="notaTitle">Titulo de la nota</Label>							
+							<ImageView id="notaPic"></ImageView>													
+							<Label id="notaText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget leo et augue vestibulum hendrerit vel a purus. Maecenas malesuada erat hendrerit arcu viverra, non interdum lorem lacinia. 
+							</Label>	
+						<View id="bottomActions">
+						</View>
+					</View>
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNota">															
+							<Label id="notaTitle">Titulo de la nota</Label>							
+							<ImageView id="notaPic"></ImageView>													
+							<Label id="notaText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget leo et augue vestibulum hendrerit vel a purus. Maecenas malesuada erat hendrerit arcu viverra, non interdum lorem lacinia. 
+							</Label>	
+						<View id="bottomActions">
+						</View>
+					</View>
+				</TableViewRow>
+			</TableView>
+			
+		</View>
+	</Window>
+</Alloy>
+
+
+

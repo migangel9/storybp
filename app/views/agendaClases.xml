@@ -1,0 +1,172 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNewsAll"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+				<View id="menuBar">
+					<View class="tbButton">
+						<Label id="tituloLbl">Horario de clases</Label>												
+					</View>					
+				</View> 
+					
+			<!-- Seccion de horario de clases -->			
+				<ScrollView id="clases" showVerticalScrollIndicator="true" scrollType="VERTICAL" >										
+					<View class="celda"></View>
+					<View class="celda"><Label text="L"/></View>
+					<View class="celda"><Label text="Ma"/></View>
+					<View class="celda"><Label text="Mi"/></View>
+					<View class="celda"><Label text="J"/></View>
+					<View class="celda"><Label text="V"/></View>
+					<View class="celda"><Label text="S"/></View>
+					
+					<View class="celda"><Label text="7:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>					
+					
+					<View class="celda"><Label text="8:00"/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="9:00"/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="10:00"/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda" backgroundColor="#3793F5"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="11:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="12:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="13:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="14:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="15:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="16:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="17:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="18:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="19:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="20:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+					<View class="celda"><Label text="21:00"/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					<View class="celda"><Label text=""/></View>
+					
+				</ScrollView>									    								
+									    										
+		</View>			
+	</Window>
+</Alloy>
+
+
+

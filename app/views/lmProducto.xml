@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="container">
+		<!-- Menu-->
+		<View id="menu" onClick="hideMenu"></View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">				
+				<ImageView class="topActionButton" id="backBtn" onClick="closeProducto"></ImageView>
+				<Label id="backLbl" onClick="closeProducto">Lobo Mercado</Label>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+					
+			<!-- Seccion de informacion -->
+			<ScrollView id="rowContainer" showVerticalScrollIndicator="true" scrollType="vertical">														
+					<Label id="notaTitle" text="Playera"></Label>
+					<View id="infoNutrimental">
+						<ImageView id="imageProduct" image="/images/playera.jpg"></ImageView>																											
+						<Label id="infoNutri">Precio: $10</Label>
+						<Label id="infoNutri">Estado: Nuevo</Label>							
+					</View>
+					<Label id="notaText" text="Playera de la Selección de Mexico, marca Adidas completamente Nueva......."></Label>								
+					<View id="bottomActions">
+						<Button id="button" title="Ofertar" />
+					</View>										
+			</ScrollView>			
+		</View>
+	</Window>
+</Alloy>
+
+
+

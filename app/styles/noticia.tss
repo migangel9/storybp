@@ -1,0 +1,176 @@
+"#container": {
+	backgroundColor:"white",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	fullscreen: false,	
+	navBarHidden: true	
+},
+
+"#main":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#D2D2D2",
+	left: 0,
+	layout: "vertical"
+}
+
+"#iconBar":{
+	backgroundGradient: {
+			type: "linear",
+			startPoint: { x: "0%", y:"0%"},
+			endPoint:   { x: "0%", y:"100%"},
+			colors: [
+				{ color: "#044D77", offset: 0.0 },
+				{ color: "#01466D", offset: 1.0 }
+			]
+	},
+	width: Ti.UI.FILL,
+	height:"54"
+}
+
+".topActionButton":{
+	width:"45",
+	height:"45",
+	left: 5	
+}
+
+"#backBtn":{
+	image:"/images/ic_action_back.png"
+}
+ 
+"#backLbl":{
+	left: 55,	
+	color: "#fff",
+	font: {
+		fontSize: "20",
+		fontWeight: "bold"
+	}		
+}
+
+
+"#menuBtn":{
+	left: 5,
+	width:"35",
+	height:"34",
+	image:"/images/menuBtn.png"		
+}
+
+"#searchBtn":{
+	right: 5,
+	width:"35",
+	height:"34",
+	image:"/images/searchBtn.png"
+}
+
+"#menuBar":{
+	backgroundColor: "#f5f6f9",
+	width: Ti.UI.FILL,
+	height: "45",
+	layout: "horizontal"
+}
+
+".tbButton":{
+	width: Ti.UI.FILL,
+	height:"45"	
+}
+
+"#filterBtn":{
+	width:"19",
+	height:"19",
+	right: 75,
+	image:"/images/catBtn.png"
+}
+
+"#categoriaLbl":{
+	right: 0,	
+	color: "#2B2D2B",
+	font: {
+		fontSize: "16",
+		fontWeight: "bold"
+	}	
+}
+
+"#mainList":{
+	backgroundColor: "#D4D6DA",
+	separatorStyle: "NONE"
+}
+
+"#listRow":{
+	height: "200",
+	selectionStyle: "NONE"	
+}
+
+"#rowContainer":{
+	borderColor: "#cacdd8",
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff"	
+}
+
+"#profilePic":{
+	width: "56",
+	height: "56",
+	image: "/images/profilepic.png",
+	top: "5",
+	right: "5"
+}
+
+"#nameDependency":{
+	top: "5",
+	left: "5",	
+	color: "#003b5d",
+	font: {
+		fontSize: "16",
+		fontWeight: "bold"
+	}	
+}
+
+"#date":{
+	top: "25",
+	left: "5",
+	color: "#003b5d",	
+	font: {
+		fontSize: "14"
+	}
+}
+
+"#news":{
+	width: Ti.UI.SIZE,	
+	left: 5,
+	rigth: 5,	
+	color: "#4E4E4E",
+	font:{
+		fontSize: "16"
+	}
+}
+ 
+"#bottomActions":{
+	bottom: 0,
+	height: "30",
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",
+	layout: "horizontal"	
+}
+
+".itemActionButton":{
+	width: "25",
+	heigth: "25"
+}
+
+"#starBtn":{	
+	right: "30",
+	image: "/images/starBtn.png"
+}
+
+
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#585B63",
+	left: 0
+}

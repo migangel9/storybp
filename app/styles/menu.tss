@@ -1,0 +1,29 @@
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#585B63",
+	left: 0
+}
+
+"#options": {
+	top: 0, left: 0,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',	
+	bubbleParent: false, 	
+	backgroundColor: '#585B63'
+}
+ 
+".option": {
+	top: 0, left: 0,	
+	height: 44,
+	width: 290,
+	borderColor: "#32384F",
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",	
+	color: "#fff",
+	backgroundColor: '#8A8C90'
+}

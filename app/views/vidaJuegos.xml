@@ -1,0 +1,69 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">									
+					<Label id="categoriaLbl">Vida Juegos</Label>										
+			</View>
+	
+			<!-- Seccion de Eventos -->
+			<TableView id="mainList">  
+				<TableViewRow id="listRow">																						
+							<ImageView class="itemActionButton" id="ciertoFalsoBtn" onClick="showCiertoFalso"></ImageView>
+							<Label id="gameName"> Cierto o Falso</Label>
+							<Label id="infoGame"> Prueba tus conocimientos y juega este reto.</Label>																			
+							<ImageView class="itemActionButton" id="playBtn" onClick="showAlerta"></ImageView>																														
+				</TableViewRow>	
+				<TableViewRow id="listRowDisable">
+							<ImageView class="itemActionButton" id="runningBtn"></ImageView>																					
+							<Label id="gameNameDisable"> Check in Running</Label>
+							<Label id="infoGameDisable"> Corre hasta la meta y has check in!</Label>																									
+							<ImageView class="itemActionButton" id="buyBtn" onClick="showAlerta"></ImageView>																														
+				</TableViewRow>	
+				<TableViewRow id="listRowDisable">
+							<ImageView class="itemActionButton" id="tapBtn"></ImageView>																									
+							<Label id="gameNameDisable"> Tap tap</Label>
+							<Label id="infoGameDisable"> ...</Label>																									
+							<ImageView class="itemActionButton" id="coinsBtn" onClick="showAlerta"></ImageView>																														
+				</TableViewRow>			
+			</TableView>		
+			
+			<!-- Alerta -->
+			<AlertDialog id="dialog" onClick="doClick" title="Comprar Juego"
+            message="¿Quieres comprar este juego con tu dineroBUAP?" cancel="1">            
+            <ButtonNames>
+                <ButtonName>Aceptar</ButtonName>
+                <ButtonName>Cancelar</ButtonName>                
+            </ButtonNames>
+        </AlertDialog>
+				
+		</View>
+	</Window>
+</Alloy>
+
+
+

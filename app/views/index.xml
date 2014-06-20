@@ -1,0 +1,143 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!--<Require src="menu" />-->
+		
+		<View id="menu" onSwipe="hideMenu">
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNewsAll"><Label>Noticias</Label></View>
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+				<View class="option" onClick="showMercado"><Label>Lobo Mercado</Label></View>
+			</View>
+		</View>
+
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">
+				<View class="tbButton">
+					<Label id="tituloLbl">Noticias</Label>
+					<Picker id="pickerNoticias" selectionIndicator="true">
+          			  	<PickerColumn id="columnPickerNoticias">
+          			  		<PickerRow class="rowPickerNoticias" title="Todas" />
+                			<PickerRow class="rowPickerNoticias" title="Eventos Academicos" />
+                			<PickerRow class="rowPickerNoticias" title="Eventos Deportivos" />
+                			<PickerRow class="rowPickerNoticias" title="Rectoria" />                		
+            			</PickerColumn>
+        			</Picker>
+        			<ImageView id="filterBtn"></ImageView>
+				</View>					
+			</View>
+			
+			<!-- Seccion de Noticias -->
+			<TableView id="mainList">  
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNews">																	
+							<Label id="nameDependency"> Rectoria </Label>
+							<Label id="date"> 21.05.2014 </Label>
+							<ImageView id="profilePic"></ImageView>													
+							<Label id="news"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, mi sed molestie interdum, sem libero egestas leo, at elementum mauris massa sed dui. Ut id porta arcu, at scelerisque dui... </Label>
+						</View>																			
+						<View id="bottomActions">
+								<ImageView class="itemActionButton" id="starBtn" onClick="showAlerta"></ImageView>
+								<ImageView class="itemActionButton" id="confirmBtn" ></ImageView>																			
+						</View>					
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNews">																	
+							<Label id="nameDependency"> Deportes </Label>
+							<Label id="date"> 21.05.2014 </Label>
+							<ImageView id="profilePic"></ImageView>													
+							<Label id="news"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, mi sed molestie interdum, sem libero egestas leo, at elementum mauris massa sed dui. Ut id porta arcu, at scelerisque dui... </Label>
+						</View>																			
+						<View id="bottomActions">
+								<ImageView class="itemActionButton" id="starBtn" onClick="showAlerta"></ImageView>
+								<ImageView class="itemActionButton" id="confirmBtn" ></ImageView>																			
+						</View>					
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNews">																	
+							<Label id="nameDependency"> Diplomado </Label>
+							<Label id="date"> 21.05.2014 </Label>
+							<ImageView id="profilePic"></ImageView>													
+							<Label id="news"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, mi sed molestie interdum, sem libero egestas leo, at elementum mauris massa sed dui. Ut id porta arcu, at scelerisque dui... </Label>
+						</View>																			
+						<View id="bottomActions">
+								<ImageView class="itemActionButton" id="starBtn" onClick="showAlerta"></ImageView>
+								<ImageView class="itemActionButton" id="confirmBtn" ></ImageView>																			
+						</View>					
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNews">																	
+							<Label id="nameDependency"> Eventos </Label>
+							<Label id="date"> 21.05.2014 </Label>
+							<ImageView id="profilePic"></ImageView>													
+							<Label id="news"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, mi sed molestie interdum, sem libero egestas leo, at elementum mauris massa sed dui. Ut id porta arcu, at scelerisque dui... </Label>
+						</View>																			
+						<View id="bottomActions">
+								<ImageView class="itemActionButton" id="starBtn" onClick="showAlerta"></ImageView>
+								<ImageView class="itemActionButton" id="confirmBtn" ></ImageView>																			
+						</View>					
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNews">																	
+							<Label id="nameDependency"> Rectoria </Label>
+							<Label id="date"> 21.05.2014 </Label>
+							<ImageView id="profilePic"></ImageView>													
+							<Label id="news"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, mi sed molestie interdum, sem libero egestas leo, at elementum mauris massa sed dui. Ut id porta arcu, at scelerisque dui... </Label>
+						</View>																			
+						<View id="bottomActions">
+								<ImageView class="itemActionButton" id="starBtn" onClick="showAlerta"></ImageView>
+								<ImageView class="itemActionButton" id="confirmBtn" ></ImageView>																			
+						</View>					
+				</TableViewRow>
+				
+				<TableViewRow id="listRow">
+					<View id="rowContainer" onClick="showNews">																	
+							<Label id="nameDependency"> CCU </Label>
+							<Label id="date"> 21.05.2014 </Label>
+							<ImageView id="profilePic"></ImageView>													
+							<Label id="news"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, mi sed molestie interdum, sem libero egestas leo, at elementum mauris massa sed dui. Ut id porta arcu, at scelerisque dui... </Label>
+						</View>																			
+						<View id="bottomActions">
+								<ImageView class="itemActionButton" id="starBtn" onClick="showAlerta"></ImageView>
+								<ImageView class="itemActionButton" id="confirmBtn" ></ImageView>																			
+						</View>					
+				</TableViewRow>
+				
+				
+			</TableView>
+			
+				<AlertDialog id="dialog" onClick="doClick" title="Agendando"
+            message="El evento se agregara a tu agenda." cancel="1">            
+            <ButtonNames>
+                <ButtonName>Aceptar</ButtonName>
+                <ButtonName>Cancelar</ButtonName>                
+            </ButtonNames>
+        </AlertDialog>
+			
+		</View>
+	</Window>
+</Alloy>
+
+
+

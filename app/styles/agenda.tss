@@ -1,0 +1,223 @@
+".container": {
+	backgroundColor:"white",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	fullscreen: false,	
+	navBarHidden: true	
+},
+
+"#main":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#D2D2D2",
+	left: 0,
+	layout: "vertical"
+}
+
+"#iconBar":{
+	backgroundGradient: {
+			type: "linear",
+			startPoint: { x: "0%", y:"0%"},
+			endPoint:   { x: "0%", y:"100%"},
+			colors: [
+				{ color: "#044D77", offset: 0.0 },
+				{ color: "#01466D", offset: 1.0 }
+			]
+	},
+	width: Ti.UI.FILL,
+	height:"54"
+}
+
+"#topActions":{
+	width:"200",
+	height:"50",
+	layout:"horizontal"
+}
+
+".topActionButton":{
+	width:"30",
+	height:"30",
+	left: 20,
+	top: 10
+}
+
+"#contactsBtn":{
+	image:"/images/contactBtn.png"
+}
+
+"#messagesBtn":{
+	image:"/images/messagesBtn.png"
+}
+
+"#notificationsBtn":{
+	image:"/images/notificationsBtn.png"
+}
+
+"#eventBtn":{
+	image:"/images/ic_action_event.png"
+}
+
+
+"#menuBtn":{
+	left: 5,
+	width:"35",
+	height:"34",
+	image:"/images/menuBtn.png"		
+}
+
+"#searchBtn":{
+	right: 5,
+	width:"35",
+	height:"34",
+	image:"/images/searchBtn.png"
+}
+
+"#tituloLbl":{
+	left: 5,	
+	color: "#fff",
+	font: {
+		fontSize: "20",
+		fontWeight: "bold"
+	}	
+}
+
+"#menuBar":{
+	backgroundColor:"#575757",	
+	width: Ti.UI.FILL,
+	height: "30",	
+}
+
+".tbButton":{
+	width: Ti.UI.FILL,
+	height:"30"	
+}
+
+"#filterBtn":{
+	width:"19",
+	height:"19",
+	right: 5,
+	image:"/images/catBtn.png"
+}
+
+"#pickerAgenda":{	
+	height:	30
+}
+
+"#columnPickerAgenda":{
+	backgroudImage:"/images/catBtn.png",
+	backgroundColor: "#575757"		
+}
+
+".rowPickerAgenda":{
+	backgroundColor: "#575757"	
+}
+
+"#mainList":{
+	backgroundColor: "#D4D6DA",
+	separatorStyle: "NONE"
+}
+
+"#listRow":{
+	height: '70dp',
+	backgroundColor: '#fff',
+	focusable: true
+}
+
+"#publicBtn": {	
+	left: 0,
+	height: '30dp',
+	width: '30dp'
+}
+
+"#agendarBtn": {	
+	right: 0,
+	height: '30dp',
+	width: '30dp'
+}
+
+
+"#rowContainer":{
+	borderColor: "#cacdd8",
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff"	
+}
+
+"#eventoLbl":{
+	top: "5",
+	left: "35",	
+	right: "35",
+	color: "#000",
+	font: {
+		fontSize: "16",
+		fontWeight: "bold"
+	}	
+}
+
+"#fechaLbl":{
+	top: "25",
+	left: "35",
+	right: "35",
+	color: "#1A2480",
+	font: {
+		fontSize: "14"
+	}
+}
+
+"#lugarLbl":{
+	top: "45",
+	left: "35",
+	right: "35",
+	color: "#1A2480",
+	font: {
+		fontSize: "14"
+	}
+}
+ 
+"#bottomActions":{
+	bottom: 0,
+	height: "30",
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",
+	layout: "horizontal"	
+}
+
+"#starBtn":{	
+	right: 0,
+	image: "/images/starBtn.png"
+}
+
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#585B63",
+	left: 0
+}
+
+"#options": {
+	top: 0, left: 0,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',	
+	bubbleParent: false, // Stop taps from bubbling to container, causing hide	
+	backgroundColor: '#585B63'
+}
+ 
+".option": {
+	top: 0, left: 0,	
+	height: 44,
+	width: 290,
+	borderColor: "#32384F",
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",	
+	color: "#fff",
+	backgroundColor: '#8A8C90'
+}

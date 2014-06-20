@@ -1,0 +1,158 @@
+".container": {
+	backgroundColor:"white",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	fullscreen: false,	
+	navBarHidden: true
+},
+
+"#main":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#EEF0F2",
+	left: 0,
+	layout: "vertical"
+}
+
+"#iconBar":{
+	backgroundGradient: {
+			type: "linear",
+			startPoint: { x: "0%", y:"0%"},
+			endPoint:   { x: "0%", y:"100%"},
+			colors: [
+				{ color: "#FF761B", offset: 0.0 },
+				{ color: "#E66713", offset: 1.0 }
+			]
+	},
+	width: Ti.UI.FILL,
+	height:"54"
+}
+
+"#topActions":{
+	width:"200",
+	height:"50",
+	layout:"horizontal"
+}
+
+".topActionButton":{
+	width:"30",
+	height:"30",
+	left: 20,
+	top: 10
+}
+
+"#contactsBtn":{
+	image:"/images/contactBtn.png"
+}
+
+"#messagesBtn":{
+	image:"/images/messagesBtn.png"
+}
+
+"#notificationsBtn":{
+	image:"/images/notificationsBtn.png"
+}
+
+"#eventBtn":{
+	image:"/images/ic_action_event.png"
+}
+
+"#menuBtn":{
+	left: 5,
+	width:"35",
+	height:"34",
+	image:"/images/menuBtn.png"		
+}
+
+"#searchBtn":{
+	right: 5,
+	width:"35",
+	height:"34",
+	image:"/images/searchBtn.png"
+}
+
+"#menuBar":{
+	backgroundColor: "#41AAFF",	
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",	
+	top: "5",
+	width: Ti.UI.FILL,
+	height: "45"	
+}
+
+"#buttons":{
+	height: Ti.UI.SIZE,
+	layout: "horizontal"
+}
+
+".tbButton":{	
+	width: "100",
+	height: "105",
+	top: "10",
+	left: "10",
+	backgroundColor: "#fff",	
+	layout: "vertical"
+}
+
+"#gamesBtn":{
+	image:"/images/gamesBtn.png"
+}
+
+"#storeBtn":{
+	image:"/images/storeBtn.png"
+}
+
+"#dietBtn":{
+	image:"/images/dietBtn_.png"
+}
+
+"#blogBtn":{
+	image:"/images/blogBtn_.png"
+}
+
+"#cashN":{	
+	right: 55,	
+	color: "#fff",
+	font: {
+		fontSize: "28",
+		fontWeight: "bold"
+	}
+}
+
+"#cashBtn":{		
+	right: 8,
+	width: 45,
+	height: 45,
+	image:"/images/cashBtn.png"
+}
+
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#585B63",
+	left: 0	
+}
+
+"#options": {
+	top: 0, left: 0,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',	
+	bubbleParent: false, // Stop taps from bubbling to container, causing hide	
+	backgroundColor: '#585B63'
+}
+ 
+".option": {
+	top: 0, left: 0,	
+	height: 44,
+	width: 290,
+	borderColor: "#32384F",
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",	
+	color: "#fff",
+	backgroundColor: '#8A8C90'
+}

@@ -1,0 +1,173 @@
+"#container": {
+	backgroundColor:"white",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	fullscreen: false,	
+	navBarHidden: true	
+},
+
+"#main":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#D2D2D2",
+	left: 0,
+	layout: "vertical"
+}
+
+"#iconBar":{
+	backgroundGradient: {
+			type: "linear",
+			startPoint: { x: "0%", y:"0%"},
+			endPoint:   { x: "0%", y:"100%"},
+			colors: [
+				{ color: "#FF761B", offset: 0.0 },
+				{ color: "#E66713", offset: 1.0 }
+			]
+	},
+	width: Ti.UI.FILL,
+	height:"54"
+}
+
+".topActionButton":{
+	width:"45",
+	height:"45",
+	left: 5	
+}
+
+"#backBtn":{
+	image:"/images/ic_action_back.png"
+}
+ 
+"#backLbl":{
+	left: 55,	
+	color: "#fff",
+	font: {
+		fontSize: "20",
+		fontWeight: "bold"
+	}		
+}
+
+
+"#menuBtn":{
+	left: 5,
+	width:"35",
+	height:"34",
+	image:"/images/menuBtn.png"		
+}
+
+"#searchBtn":{
+	right: 5,
+	width:"35",
+	height:"34",
+	image:"/images/searchBtn.png"
+}
+
+"#menuBar":{
+	backgroundColor: "#f5f6f9",
+	width: Ti.UI.FILL,
+	height: "45",
+	layout: "horizontal"
+}
+
+".tbButton":{
+	width: Ti.UI.FILL,
+	height:"45"	
+}
+
+"#filterBtn":{
+	width:"19",
+	height:"19",
+	right: 75,
+	image:"/images/catBtn.png"
+}
+
+"#categoriaLbl":{
+	right: 0,	
+	color: "#2B2D2B",
+	font: {
+		fontSize: "16",
+		fontWeight: "bold"
+	}	
+}
+
+"#mainList":{
+	backgroundColor: "#D4D6DA",
+	separatorStyle: "NONE"
+}
+
+
+"#rowContainer":{
+	borderColor: "#cacdd8",
+	borderRadius: 5,
+	borderWidht: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff",	
+	layout: "vertical"
+} 
+
+"#infoNutrimental":{
+	width: Ti.UI.FILL,
+	height: "150",		
+	layout: "horizontal"	
+}
+
+"#imageProduct":{
+	width: "110",
+	height: "110",	
+	top: "5",
+	right: "5"
+}
+
+"#infoNutri":{	
+	top: "5",
+	left: "5",
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,	
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000"
+}
+
+"#notaTitle":{
+	top: "5",
+	left: "5",
+	width: Ti.UI.FILL,	
+	color: "#670000",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: "16",
+		fontWeight: "bold"
+	}
+}
+
+"#notaText":{
+	width: Ti.UI.FILL,
+	left: 5,
+	right: 5,	
+	color:"#000",
+	font:{
+		fontSize: "16"		
+	}
+}
+ 
+"#bottomActions":{
+	top: 10,	
+	height: "50",
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",	
+}
+
+".itemActionButton":{
+	width: "25",
+	heigth: "25"
+}
+
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#585B63",
+	left: 0
+}

@@ -1,0 +1,37 @@
+<Alloy>
+	<Window id="container">
+		<!-- Menu-->
+		<View id="menu" onClick="hideMenu"></View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">				
+				<ImageView class="topActionButton" id="backBtn" onClick="closeProducto"></ImageView>
+				<Label id="backLbl" onClick="closeProducto">Vida Tienda</Label>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+					
+			<!-- Seccion de informacion -->
+			<ScrollView id="rowContainer" showVerticalScrollIndicator="true" scrollType="vertical">														
+					<Label id="notaTitle" text="Manzana"></Label>
+					<View id="infoNutrimental">
+						<ImageView id="imageProduct" image="/images/appleBtn.png"></ImageView>																											
+						<Label id="infoNutri"> Valor nutricional por cada 100 g c/ piel.
+							Energía 50 kcal 220 kJ
+							Carbohidratos 	13.81 g
+							Azúcares 	10.39 g
+							Grasas 	0.17 g
+							Proteínas 	0.26 g
+							Agua 	85.56 g </Label>							
+					</View>
+					<Label id="notaText" text="¡Media manzana te provee de 5 gramos más de fibra que la mayoría de los cereales! Las manzanas son de las frutas que más contienen pectina, una fibra soluble que reduce el colesterol. La pectina evita que el colesterol se acumule en el recubrimiento de las paredes de los vasos sanguíneos, reduciendo por lo tanto el riesgo de ateroesclerosis y otras enfermedades del corazón."></Label>								
+					<View id="bottomActions">
+						<Button id="button" title="Obtener Codigo" />
+					</View>										
+			</ScrollView>			
+		</View>
+	</Window>
+</Alloy>
+
+
+

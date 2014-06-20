@@ -1,0 +1,116 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNewsAll"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+				<View id="menuBar">
+					<View class="tbButton">
+						<Label id="tituloLbl">Agenda</Label>						
+						<Picker id="pickerAgenda" selectionIndicator="true">
+	          			  	<PickerColumn id="columnPickerAgenda">
+	          			  		<PickerRow class="rowPickerAgenda" title="Todos" />
+	                			<PickerRow class="rowPickerAgenda" title="Eventos BUAP" />
+	                			<PickerRow class="rowPickerAgenda" title="Eventos Personales" />
+	                			<PickerRow class="rowPickerAgenda" title="Añadidos a calendario" />
+	                			<PickerRow class="rowPickerAgenda" title="Clases" />	                			                	
+	            			</PickerColumn>
+	        			</Picker>
+	        			
+	        			<Picker id="pickerMenu" right="0" selectionIndicator="true" width="30">
+	          			  	<PickerColumn id="columnPickerMenu">	          			  			          			  	
+	                			<PickerRow class="rowPickerMenu" title="Crear nuevo Evento Personal" onChange="showAgendaClases"/>
+	                			<PickerRow class="rowPickerMenu" title="Configurar horario de clases" onChange="showAgendaClases" />
+	                			<PickerRow class="rowPickerMenu" title="Configurar notificaciones" onChange="showAgendaClases"/>	                				                			                
+	            			</PickerColumn>
+	        			</Picker>
+					</View>					
+				</View>
+	
+			<!-- Seccion de Eventos -->			
+			
+			<TableView id="mainList">  
+				<TableViewRow id="listRow">	
+							<ImageView id="publicBtn" onClick="showAlertaPublico" image="/images/tick_64.png"></ImageView>																			
+							<Label id="eventoLbl"> Clase de Ecuaciones Diferenciales</Label>
+							<Label id="fechaLbl"> Fecha: 09.09.2014, 7:00-9:00 am</Label>
+							<Label id="lugarLbl"> Lugar: Edificio Carolino salon S3</Label>																			
+							<ImageView id="agendarBtn" onClick="showAlerta" image="/images/agendaBtn.png"></ImageView>																														
+				</TableViewRow>	
+				
+				<TableViewRow id="listRow">	
+							<ImageView id="publicBtn" onClick="showAlertaPublico" image="/images/tick_gray_64.png"></ImageView>																			
+							<Label id="eventoLbl"> Conferencia Activa tu mente</Label>
+							<Label id="fechaLbl"> Fecha/Hora: 09/09/2014, 7:00-9:00 am</Label>
+							<Label id="lugarLbl"> Lugar: Edificio Carolino salon S3</Label>																			
+							<ImageView id="agendarBtn" onClick="showAlerta" image="/images/agendaBtn.png"></ImageView>																														
+				</TableViewRow>	
+				
+				<TableViewRow id="listRow">	
+							<ImageView id="publicBtn" onClick="showAlertaPublico" image="/images/tick_gray_64.png"></ImageView>																			
+							<Label id="eventoLbl"> Clase de Programación I</Label>
+							<Label id="fechaLbl"> Fecha/Hora: 09/09/2014, 7:00-9:00 am</Label>
+							<Label id="lugarLbl"> Lugar: Edificio Carolino salon S3</Label>																			
+							<ImageView id="agendarBtn" onClick="showAlerta" image="/images/agendaBtn.png"></ImageView>																														
+				</TableViewRow>	
+				
+				<TableViewRow id="listRow">	
+							<ImageView id="publicBtn" onClick="showAlertaPublico" image="/images/tick_64.png"></ImageView>																			
+							<Label id="eventoLbl"> Partido Futbol Lobos BUAP</Label>
+							<Label id="fechaLbl"> Fecha/Hora: 09/09/2014, 7:00-9:00 am</Label>
+							<Label id="lugarLbl"> Lugar: Edificio Carolino salon S3</Label>																			
+							<ImageView id="agendarBtn" onClick="showAlerta" image="/images/agendaBtn.png"></ImageView>																														
+				</TableViewRow>	
+				
+				<TableViewRow id="listRow">	
+							<ImageView id="publicBtn" onClick="showAlertaPublico" image="/images/tick_64.png"></ImageView>																			
+							<Label id="eventoLbl"> Clase de Aleman A1</Label>
+							<Label id="fechaLbl"> Fecha/Hora: 09/09/2014, 7:00-9:00 am</Label>
+							<Label id="lugarLbl"> Lugar: Edificio Carolino salon S3</Label>																			
+							<ImageView id="agendarBtn" onClick="showAlerta" image="/images/agendaBtn.png"></ImageView>																														
+				</TableViewRow>	
+			</TableView>																					        											
+									    										
+		</View>
+		
+					<!-- Alerta -->
+			<AlertDialog id="dialog" onClick="doClick" title="Agregar al calendario" message="¿Quieres agregar este evento al calendario de tu movil?" cancel="1">            
+	            <ButtonNames>
+	                <ButtonName>Aceptar</ButtonName>
+	                <ButtonName>Cancelar</ButtonName>
+	            </ButtonNames>
+        	</AlertDialog>
+        	
+        	<AlertDialog id="eventoPublico" onClick="doClick" title="Evento público" message="¿Deseas hacer público este evento de tu calendario?" cancel="1">            
+	            <ButtonNames>
+	                <ButtonName>Aceptar</ButtonName>
+	                <ButtonName>Cancelar</ButtonName>
+	            </ButtonNames>
+        	</AlertDialog>
+	</Window>
+</Alloy>
+
+
+

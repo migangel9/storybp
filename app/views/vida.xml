@@ -1,0 +1,57 @@
+<Alloy>
+	<Window class="container">
+		<!-- Menu-->
+		<!-- <Require src="menu" /> -->
+		<View id="menu" onSwipe="hideMenu">			
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNews"><Label>Noticias</Label></View>				
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+			</View>		
+		</View>
+		<!-- Principal -->
+		<View id="main">
+			<!-- Menu de Iconos-->
+			<View id="iconBar">
+				<View id="topActions">
+					<ImageView class="topActionButton" id="contactsBtn"></ImageView>
+					<ImageView class="topActionButton" id="eventBtn" onClick="showAgenda"></ImageView>
+					<ImageView class="topActionButton" id="messagesBtn"></ImageView>
+					<ImageView class="topActionButton" id="notificationsBtn"></ImageView>					
+				</View>
+				<ImageView id="menuBtn" onClick="showMenu"></ImageView>
+				<ImageView id="searchBtn"></ImageView>
+			</View>
+			
+			<!-- Menu Secundario-->
+			<View id="menuBar">
+					<Label id="seccionLbl">VIDA SANA</Label>
+			</View>
+			
+			<!-- Seccion de Principal -->
+			<ScrollView id="buttons" showVerticalScrollIndicator="true" scrollType="vertical">			
+					<View class="tbButton">				
+						<ImageView id="gamesBtn" onClick="showJuegos"></ImageView>
+						<Label>Juegos</Label>
+					</View>
+					<View class="tbButton">							
+						<ImageView id="storeBtn" onClick="showVidaTienda"></ImageView>
+						<Label>Tienda</Label>
+					</View>								
+					<View class="tbButton">
+						<ImageView id="dietBtn" onClick="showVidaDieta"></ImageView>
+						<Label>Come Sano</Label>
+					</View>							
+					<View class="tbButton">
+						<ImageView id="blogBtn" onClick="showVidaBlog"></ImageView>
+						<Label>Vida Blog</Label>
+					</View>				
+			</ScrollView>			
+		</View>
+	</Window>
+</Alloy>
+
+
+

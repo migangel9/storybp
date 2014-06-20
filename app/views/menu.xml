@@ -1,0 +1,13 @@
+<Alloy>
+ 	<!-- Tapping the mask hides the options -->
+ 	<View id="menu" onSwipe="hideMenu">
+			<View id="options">
+				<View class="option"><Label>Perfil</Label></View>
+				<View class="option" onClick="showAgenda"><Label>Agenda</Label></View>
+				<View class="option"><Label>Mensajes</Label></View>
+				<View class="option" onClick="showNewsAll"><Label>Noticias</Label></View>
+				<View class="option" onClick="showVida"><Label>Vida Sana</Label></View>
+				<View class="option" onClick="showMercado"><Label>Lobo Mercado</Label></View>
+			</View>
+		</View>
+</Alloy>
